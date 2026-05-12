@@ -46,7 +46,7 @@ with tabs[2]:
             st.success(summary)
 
 
-
+            
 with tabs[3]:
     st.header("PDF Question Answering")
 
