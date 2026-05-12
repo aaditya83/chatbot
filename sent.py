@@ -7,7 +7,12 @@ def cleancode(text):
     text=re.sub(r"[^a-z0-9\s]", " ",text)
     return text
 
-with open("sentiment_model.pkl", "rb") as f:
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "sentiment_model.pkl")
+
+with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
 with open("vectorizer.pkl", "rb") as f:
