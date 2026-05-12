@@ -4,7 +4,7 @@ client = InferenceClient("meta-llama/Meta-Llama-3-8B-Instruct")
 
 SYSTEM_PROMPT = (
     "You are a professional text summarizer. "
-    "Summarize input into 20–25 words. "
+    "Summarize input into 30% of the original words. "
     "Keep only key meaning. Be precise and concise."
 )
 

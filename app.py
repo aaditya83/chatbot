@@ -10,7 +10,7 @@ st.title("🚀 End-to-End AI Assistant")
 
 tabs = st.tabs(["💬 Chatbot", "😊 Sentiment", "📝 Summarizer", "📄 PDF Q&A"])
 
-# -------------------- CHATBOT TAB --------------------
+
 with tabs[0]:
     st.header("Chatbot")
 
@@ -22,7 +22,7 @@ with tabs[0]:
             st.success(response)
 
 
-# -------------------- SENTIMENT TAB --------------------
+
 with tabs[1]:
     st.header("Sentiment Analyzer")
 
@@ -34,7 +34,7 @@ with tabs[1]:
             st.success(f"Sentiment: {sentiment}")
 
 
-# -------------------- SUMMARIZER TAB --------------------
+
 with tabs[2]:
     st.header("Text Summarizer")
 
@@ -46,7 +46,7 @@ with tabs[2]:
             st.success(summary)
 
 
-# -------------------- PDF Q&A TAB --------------------
+
 with tabs[3]:
     st.header("PDF Question Answering")
 

@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     print("Vectorizing...")
     vectorizer = TfidfVectorizer(max_features=5000)
-    x = vectorizer.fit_transform(df['cleaned_review']) # Kept as sparse matrix!
+    x = vectorizer.fit_transform(df['cleaned_review']) 
     y = df["sentiment"]
 
     print("Splitting dataset...")
